@@ -33,7 +33,7 @@ export default function LandingPage() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://placehold.co/600/400.png"
               alt="People collaborating on a project"
               width={600}
               height={400}
