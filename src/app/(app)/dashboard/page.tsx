@@ -6,20 +6,34 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function DashboardPage() {
   const { user } = useAuth();
 
   return (
     <div className="container mx-auto py-8">
-      <div className="space-y-4">
-        <h1 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
-          Welcome back, {user?.displayName || "User"}!
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          Ready to swap some skills? Here&apos;s your hub for learning and sharing.
-        </p>
+      <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+        <div className="space-y-4">
+          <h1 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
+            Welcome back, {user?.displayName || "User"}!
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Ready to swap some skills? Here&apos;s your hub for learning and sharing.
+          </p>
+        </div>
+        <div className="hidden md:flex justify-center">
+            <Image
+                src="https://placehold.co/400x300.png"
+                alt="Illustration of people connecting and sharing ideas"
+                width={400}
+                height={300}
+                className="rounded-lg shadow-md"
+                data-ai-hint="teamwork connection"
+              />
+        </div>
       </div>
+
 
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <Card>
