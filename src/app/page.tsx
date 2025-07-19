@@ -33,12 +33,11 @@ export default function LandingPage() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/600/400.png"
+              src="https://images.unsplash.com/photo-1543069752-7148d755b347?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8Y29tbXVuaXR5JTIwaGVscGluZyUyMGVhY2glMjBvdGhlcnxlbnwwfHx8fDE3NTI5MzgwMjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="People collaborating on a project"
               width={600}
               height={400}
               className="rounded-xl shadow-2xl"
-              data-ai-hint="collaboration community"
             />
           </div>
         </section>
